@@ -1,4 +1,6 @@
 Iwish::Application.routes.draw do
+  resources :occasions
+
   get "profile/index"
 
   get "home/index"

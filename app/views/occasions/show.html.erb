@@ -1,0 +1,25 @@
+<p id="notice"><%= notice %></p>
+
+<p>
+  <b>Id:</b>
+  <%= @occasion.id %>
+</p>
+
+<p>
+  <b>Name:</b>
+  <%= @occasion.name %>
+</p>
+
+<p>
+  <b>Recurring:</b>
+  <%= @occasion.recurring %>
+</p>
+
+<p>
+  <b>Desc:</b>
+  <%= @occasion.desc %>
+</p>
+
+
+<%= link_to 'Edit', edit_occasion_path(@occasion) %> |
+<%= link_to 'Back', occasions_path %>
