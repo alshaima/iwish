@@ -1,0 +1,17 @@
+# Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
+
+one:
+  id: MyString
+  integer: MyString
+  occasion: 
+  user: 
+  start_date: 2012-11-16
+  due_date: 2012-11-16
+
+two:
+  id: MyString
+  integer: MyString
+  occasion: 
+  user: 
+  start_date: 2012-11-16
+  due_date: 2012-11-16
