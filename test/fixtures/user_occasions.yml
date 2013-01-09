@@ -1,17 +1,17 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/Fixtures.html
 
 one:
-  id: MyString
-  integer: MyString
+  id: 1
   occasion: 
   user: 
   start_date: 2013-01-09
   due_date: 2013-01-09
+  comment: MyText
 
 two:
-  id: MyString
-  integer: MyString
+  id: 1
   occasion: 
   user: 
   start_date: 2013-01-09
   due_date: 2013-01-09
+  comment: MyText

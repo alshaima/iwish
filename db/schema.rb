@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121116062454) do
+ActiveRecord::Schema.define(:version => 20130109114300) do
 
   create_table "occasions", :force => true do |t|
     t.string   "name"
@@ -22,14 +22,17 @@ ActiveRecord::Schema.define(:version => 20121116062454) do
   end
 
   create_table "user_occasions", :force => true do |t|
-    t.string   "integer"
     t.integer  "occasion_id"
     t.integer  "user_id"
     t.date     "start_date"
     t.date     "due_date"
+    t.text     "comment"
     t.datetime "created_at",  :null => false
     t.datetime "updated_at",  :null => false
   end
+
+  add_index "user_occasions", ["occasion_id"], :name => "index_user_occasions_on_occasion_id"
+  add_index "user_occasions", ["user_id"], :name => "index_user_occasions_on_user_id"
 
   create_table "users", :force => true do |t|
     t.string   "provider"
