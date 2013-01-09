@@ -8,6 +8,10 @@
   <%= link_to "Sign in with Twitter", "/auth/twitter" %>
 <% end %>
 <br />
+
+<%= link_to "Manage Occasions",occasions_path %>
+
+<br />
 <%= label_tag(:occasion_id, 'Select an Occasion: ') %>
 <%= select_tag(:occasion_id,options_from_collection_for_select(Occasion.all, :id, :name)) %>
 
