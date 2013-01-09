@@ -1,0 +1,29 @@
+<h1>Listing user occasions</h1>
+
+<table>
+  <tr>
+    <th>Id</th>
+    <th>start date</th>
+    <th>due date</th>
+    <th>comment</th>
+    <th></th>
+    <th></th>
+    <th></th>
+  </tr>
+
+<% @user_occasions.each do |occasion| %>
+  <tr>
+    <td><%= occasion.id %></td>
+    <td><%= occasion.start_date %></td>
+    <td><%= occasion.end_date %></td>
+    <td><%= occasion.comment %></td>
+    <td><%= link_to 'Show', occasion %></td>
+    <td><%= link_to 'Edit', edit_user_occasion_path(occasion) %></td>
+    <td><%= link_to 'Destroy', occasion, method: :delete, data: { confirm: 'Are you sure?' } %></td>
+  </tr>
+<% end %>
+</table>
+
+<br />
+
+<%= link_to 'Add Occasion', new_user_occasion_path %>

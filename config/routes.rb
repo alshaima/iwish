@@ -1,5 +1,5 @@
 Iwish::Application.routes.draw do
-  resources :occasions
+  resources :occasions, :user_occasions
 
   get "profile/index"
 

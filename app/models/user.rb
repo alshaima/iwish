@@ -9,5 +9,6 @@ def self.create_with_omniauth(auth)
   end
 end
 
-
+has_many :user_occasions
+has_many :occasions, :through => :user_occasions
 end
