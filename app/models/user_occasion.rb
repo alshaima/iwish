@@ -1,3 +1,5 @@
 class UserOccasion < ActiveRecord::Base
-  attr_accessible :due_date, :id, :integer, :occasion, :start_date, :user
+  belongs_to :occasion
+  belongs_to :user
+  attr_accessible :due_date, :id, :integer, :start_date
 end
